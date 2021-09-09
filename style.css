@@ -1,0 +1,184 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: rgb(255, 255, 255);
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(255, 255, 255);
+  }
+  
+  ::placeholder {
+    color: rgb(255, 255, 255);
+  }
+.body{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5)),url('https://wallpapercave.com/wp/u9AVLry.jpg');
+    width: 100%;
+}
+.head{
+    height: 15vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.head .left{
+    width: 40%;
+    /* border: 1px solid rgb(0, 4, 255); */
+    display: flex;
+    justify-content: space-between;
+}
+.head .left div{
+    width: 33%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.head .left div h1{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: rgb(204, 51, 82);
+}
+.head .left div h4{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+}
+.head .right{
+    width: 20%;
+    /* border: 1px solid rgb(38, 0, 255); */
+}
+.head .right .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.time h1{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 8vh;
+}
+.bdy{
+    /* border: 1px solid red; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bdy a{
+    /* border: 1px solid red; */
+    margin: 20px 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: white;
+ 
+}
+
+.bdy a i{
+    font-size: 35px;
+
+}
+.bdy .plus{
+    background: rgba(255, 255, 255, 0.2);
+}
+.bdy .plus:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.4);
+}
+.end{
+    /* border: 1px solid rgb(89, 0, 255); */
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.end input{
+    width: 30%;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 40px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.2);
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Mono", monospace;
+}
+.end button{
+    width: 7%;
+    height: 30px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.2);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.end button:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 1440px) {
+    .head{
+        display: none;
+    }
+    .end input{
+        width: 60%;
+    }
+    .end button{
+        width: 15%;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .head{
+        display: none;
+    }
+    .end input{
+        width: 70%;
+    }
+    .end button{
+        width: 20%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .head{
+        display: none;
+    }
+    .end input{
+        width: 70%;
+    }
+    .end button{
+        width: 25%;
+    }
+  }
+  @media only screen and (max-width: 388px) {
+    .head{
+        display: none;
+    }
+    .end input{
+        width: 70%;
+    }
+    .end button{
+        width: 40%;
+    }
+  }
